@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sp.Transpak", "Sp.Transpak\Sp.Transpak.btproj", "{E2DEFC1D-256B-4E23-873F-6EB4212C30AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sp.Transpak.Schemas", "Sp.Transpak.Schemas\Sp.Transpak.Schemas.btproj", "{8DA26175-E381-44F1-B865-67D6CD7FE305}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sp.Transpak.CallAPI", "Sp.Transpak.CallAPI\Sp.Transpak.CallAPI.csproj", "{B76994B0-27A2-4C2D-915D-BE996BD4ED87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sp.Transpak.Common", "Sp.Transpak.Common\Sp.Transpak.Common.csproj", "{5B1493D4-3493-4DD1-A1BD-E8BEAD76A373}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sp.Transpak.Orchestrations", "Sp.Transpak.Orchestrations\Sp.Transpak.Orchestrations.btproj", "{F7940980-C2BB-4B5B-894B-F8E7C093AA45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sp.Transpak.Transforms", "Sp.Transpak.Transforms\Sp.Transpak.Transforms.btproj", "{744858C6-96C8-4346-8B05-56C39DF4979A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2DEFC1D-256B-4E23-873F-6EB4212C30AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2DEFC1D-256B-4E23-873F-6EB4212C30AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2DEFC1D-256B-4E23-873F-6EB4212C30AB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E2DEFC1D-256B-4E23-873F-6EB4212C30AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2DEFC1D-256B-4E23-873F-6EB4212C30AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2DEFC1D-256B-4E23-873F-6EB4212C30AB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8DA26175-E381-44F1-B865-67D6CD7FE305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA26175-E381-44F1-B865-67D6CD7FE305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA26175-E381-44F1-B865-67D6CD7FE305}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8DA26175-E381-44F1-B865-67D6CD7FE305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA26175-E381-44F1-B865-67D6CD7FE305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA26175-E381-44F1-B865-67D6CD7FE305}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B76994B0-27A2-4C2D-915D-BE996BD4ED87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B76994B0-27A2-4C2D-915D-BE996BD4ED87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76994B0-27A2-4C2D-915D-BE996BD4ED87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B76994B0-27A2-4C2D-915D-BE996BD4ED87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1493D4-3493-4DD1-A1BD-E8BEAD76A373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1493D4-3493-4DD1-A1BD-E8BEAD76A373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1493D4-3493-4DD1-A1BD-E8BEAD76A373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1493D4-3493-4DD1-A1BD-E8BEAD76A373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7940980-C2BB-4B5B-894B-F8E7C093AA45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7940980-C2BB-4B5B-894B-F8E7C093AA45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7940980-C2BB-4B5B-894B-F8E7C093AA45}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F7940980-C2BB-4B5B-894B-F8E7C093AA45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7940980-C2BB-4B5B-894B-F8E7C093AA45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7940980-C2BB-4B5B-894B-F8E7C093AA45}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{744858C6-96C8-4346-8B05-56C39DF4979A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{744858C6-96C8-4346-8B05-56C39DF4979A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{744858C6-96C8-4346-8B05-56C39DF4979A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{744858C6-96C8-4346-8B05-56C39DF4979A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{744858C6-96C8-4346-8B05-56C39DF4979A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{744858C6-96C8-4346-8B05-56C39DF4979A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
