@@ -76,13 +76,6 @@
     <None Include="sptranspakkey.snk" />
   </ItemGroup>
   <ItemGroup>
-    <XLang Include="Process_TranspakInvoice_TPGG.odx">
-      <TypeName>Process_TranspakInvoice_TPGG</TypeName>
-      <Namespace>Sp.Transpak.Orchestrations</Namespace>
-      <SubType>Task</SubType>
-    </XLang>
-  </ItemGroup>
-  <ItemGroup>
     <XLang Include="Process_TranspakInvoice_To_DB_TPGG.odx">
       <TypeName>Process_TranspakInvoice_To_DB_TPGG</TypeName>
       <Namespace>Sp.Transpak.Orchestrations</Namespace>
@@ -104,14 +97,53 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Map Include="Map_TranspakInvoiceXML_DB.btm">
-      <TypeName>Map_TranspakInvoiceXML_DB</TypeName>
+    <XLang Include="Process_LHDNAPI_TPGG.odx">
+      <TypeName>Process_LHDNAPI_TPGG</TypeName>
       <Namespace>Sp.Transpak.Orchestrations</Namespace>
       <SubType>Task</SubType>
-    </Map>
+    </XLang>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Map_TranspakInvoiceXML_DB.xsl" />
+    <XLang Include="Process_TranspakInvoice_To_DB_TPPW.odx">
+      <SubType>Task</SubType>
+      <TypeName>Process_TranspakInvoice_To_DB_TPGG_Copy</TypeName>
+      <Namespace>Sp.Transpak.Orchestrations</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_LHDNAPI_TPPW.odx">
+      <SubType>Task</SubType>
+      <TypeName>Process_LHDNAPI_TPGG_Copy</TypeName>
+      <Namespace>Sp.Transpak.Orchestrations</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_TranspakInvoice_To_DB_TSP.odx">
+      <SubType>Task</SubType>
+      <TypeName>Process_TranspakInvoice_To_DB_TPPW_Copy</TypeName>
+      <Namespace>Sp.Transpak.Orchestrations</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_LHDNAPI_TSP.odx">
+      <SubType>Task</SubType>
+      <TypeName>Process_LHDNAPI_TPPW_Copy</TypeName>
+      <Namespace>Sp.Transpak.Orchestrations</Namespace>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_TranspakInvResponse_TSP.odx">
+      <TypeName>Process_TranspakInvResponse_TSP</TypeName>
+      <Namespace>Sp.Transpak.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_TranspakInvResponse_TPPW.odx">
+      <TypeName>Process_TranspakInvResponse_TPPW</TypeName>
+      <Namespace>Sp.Transpak.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />

@@ -8,17 +8,17 @@ namespace Sp.Transpak.Schemas {
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"StoredProcedureResultSet0", @"ArrayOfStoredProcedureResultSet0"})]
-    public sealed class uspInvoiceInsert_ProcedureResultSet_dbo_InterfaceInvoiceInsert : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    public sealed class uspInsertInvoice_ProcedureResultSet_dbo_InterfaceInvoiceInsert : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:ns4=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfaceInvoiceInsert"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfaceInvoiceInsert"" version=""1.0"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+<xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:ns3=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfaceTranspakInvoiceInsert"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfaceTranspakInvoiceInsert"" version=""1.0"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
   <xs:annotation>
     <xs:appinfo>
-      <fileNameHint xmlns=""http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd"">ProcedureResultSet.dbo.InterfaceInvoiceInsert</fileNameHint>
+      <fileNameHint xmlns=""http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd"">ProcedureResultSet.dbo.InterfaceTranspakInvoiceInsert</fileNameHint>
     </xs:appinfo>
   </xs:annotation>
   <xs:complexType name=""StoredProcedureResultSet0"">
@@ -28,16 +28,16 @@ namespace Sp.Transpak.Schemas {
       <xs:element minOccurs=""0"" maxOccurs=""1"" name=""resDescription"" nillable=""true"" type=""xs:string"" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name=""StoredProcedureResultSet0"" nillable=""true"" type=""ns4:StoredProcedureResultSet0"" />
+  <xs:element name=""StoredProcedureResultSet0"" nillable=""true"" type=""ns3:StoredProcedureResultSet0"" />
   <xs:complexType name=""ArrayOfStoredProcedureResultSet0"">
     <xs:sequence>
-      <xs:element minOccurs=""0"" maxOccurs=""unbounded"" name=""StoredProcedureResultSet0"" type=""ns4:StoredProcedureResultSet0"" />
+      <xs:element minOccurs=""0"" maxOccurs=""unbounded"" name=""StoredProcedureResultSet0"" type=""ns3:StoredProcedureResultSet0"" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name=""ArrayOfStoredProcedureResultSet0"" nillable=""true"" type=""ns4:ArrayOfStoredProcedureResultSet0"" />
+  <xs:element name=""ArrayOfStoredProcedureResultSet0"" nillable=""true"" type=""ns3:ArrayOfStoredProcedureResultSet0"" />
 </xs:schema>";
         
-        public uspInvoiceInsert_ProcedureResultSet_dbo_InterfaceInvoiceInsert() {
+        public uspInsertInvoice_ProcedureResultSet_dbo_InterfaceInvoiceInsert() {
         }
         
         public override string XmlContent {
@@ -64,7 +64,7 @@ namespace Sp.Transpak.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfaceInvoiceInsert",@"StoredProcedureResultSet0")]
+        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfaceTranspakInvoiceInsert",@"StoredProcedureResultSet0")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"StoredProcedureResultSet0"})]
         public sealed class StoredProcedureResultSet0 : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -99,7 +99,7 @@ namespace Sp.Transpak.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfaceInvoiceInsert",@"ArrayOfStoredProcedureResultSet0")]
+        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfaceTranspakInvoiceInsert",@"ArrayOfStoredProcedureResultSet0")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfStoredProcedureResultSet0"})]
         public sealed class ArrayOfStoredProcedureResultSet0 : Microsoft.XLANGs.BaseTypes.SchemaBase {

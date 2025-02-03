@@ -73,24 +73,79 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="uspErrorLogsTranspak_TypedProcedure.dbo.xsd">
+      <TypeName>uspErrorLogsTranspak_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspTranspakInvStatusPeppolDb_ProcedureResultSet.dbo.InterfaceTranspakInvStatus.xsd">
+      <TypeName>uspTranspakInvStatusPeppolDb_ProcedureResultSet_dbo_InterfaceTranspakInvStatus</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspTranspakInvStatusPeppolDb_TypedProcedure.dbo.xsd">
+      <TypeName>uspTranspakInvStatusPeppolDb_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="TranspakInvoiceResponse.xsd">
+      <TypeName>TranspakInvoiceResponse</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspLHDNSentTPGG_TypedPolling.InterfaceLHDNSentTranspakInvoices_TPGG.xsd">
+      <TypeName>uspLHDNSentTPGG_TypedPolling_InterfaceLHDNSentTranspakInvoices_TPGG</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspLHDNSentTPPW_TypedPolling.InterfaceLHDNSentTranspakInvoices_TPPW.xsd">
+      <TypeName>uspLHDNSentTPPW_TypedPolling_InterfaceLHDNSentTranspakInvoices_TPPW</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspLHDNSentTSP_TypedPolling.InterfaceLHDNSentTranspakInvoices_TSP.xsd">
+      <TypeName>uspLHDNSentTSP_TypedPolling_InterfaceLHDNSentTranspakInvoices_TSP</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPollInvoicesTSP_TypedPolling.InterfaceTranspakPollInvoicesTSP.xsd">
+      <TypeName>uspPollInvoicesTSP_TypedPolling_InterfaceTranspakPollInvoicesTSP</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPollInvoicesTPPW_TypedPolling.InterfaceTranspakPollInvoicesTPPW.xsd">
+      <TypeName>uspPollInvoicesTPPW_TypedPolling_InterfaceTranspakPollInvoicesTPPW</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspInvoiceStatusupd_TypedProcedure.dbo.xsd">
+      <TypeName>uspInvoiceStatusupd_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="PeppolAPIResponse.xsd">
+      <TypeName>PeppolAPIResponse</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <None Include="sptranspakkey.snk" />
+    <Schema Include="uspPollInvoicesTPGG_TypedPolling.InterfaceTranspakPollInvoicesTPGG.xsd">
+      <TypeName>uspPollInvoicesTPGG_TypedPolling_InterfaceTranspakPollInvoicesTPGG</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspInsertInvoice_ProcedureResultSet.dbo.InterfaceTranspakInvoiceInsert.xsd">
+      <TypeName>uspInsertInvoice_ProcedureResultSet_dbo_InterfaceInvoiceInsert</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspInsertInvoice_TypedProcedure.dbo.xsd">
+      <TypeName>uspInsertInvoice_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="SSOValues.xsd">
       <TypeName>SSOValues</TypeName>
-      <Namespace>Sp.Transpak.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspInvoiceInsert_ProcedureResultSet.dbo.InterfaceInvoiceInsert.xsd">
-      <TypeName>uspInvoiceInsert_ProcedureResultSet_dbo_InterfaceInvoiceInsert</TypeName>
-      <Namespace>Sp.Transpak.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspInvoiceInsert_TableType.dbo.xsd">
-      <TypeName>uspInvoiceInsert_TableType_dbo</TypeName>
-      <Namespace>Sp.Transpak.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspInvoiceInsert_TypedProcedure.dbo.xsd">
-      <TypeName>uspInvoiceInsert_TypedProcedure_dbo</TypeName>
       <Namespace>Sp.Transpak.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -111,7 +166,12 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo.xml" />
+    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo1.xml" />
+    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo2.xml" />
+    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo3.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo1.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
