@@ -104,14 +104,14 @@
     </XLang>
   </ItemGroup>
   <ItemGroup>
-    <XLang Include="Process_TranspakInvoice_To_DB_TPPW.odx">
+    <XLang Include="Process_TranspakInvoice_To_DB_TPMY.odx">
       <SubType>Task</SubType>
       <TypeName>Process_TranspakInvoice_To_DB_TPGG_Copy</TypeName>
       <Namespace>Sp.Transpak.Orchestrations</Namespace>
     </XLang>
   </ItemGroup>
   <ItemGroup>
-    <XLang Include="Process_LHDNAPI_TPPW.odx">
+    <XLang Include="Process_LHDNAPI_TPMY.odx">
       <SubType>Task</SubType>
       <TypeName>Process_LHDNAPI_TPGG_Copy</TypeName>
       <Namespace>Sp.Transpak.Orchestrations</Namespace>
@@ -139,8 +139,15 @@
     </XLang>
   </ItemGroup>
   <ItemGroup>
-    <XLang Include="Process_TranspakInvResponse_TPPW.odx">
+    <XLang Include="Process_TranspakInvResponse_TPMY.odx">
       <TypeName>Process_TranspakInvResponse_TPPW</TypeName>
+      <Namespace>Sp.Transpak.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_TranspakInvResponse_TPGG.odx">
+      <TypeName>Process_TranspakInvResponse_TPGG</TypeName>
       <Namespace>Sp.Transpak.Orchestrations</Namespace>
       <SubType>Task</SubType>
     </XLang>

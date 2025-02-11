@@ -30,7 +30,7 @@
             <om:Property Name="IsInvokable" Value="False" />
             <om:Property Name="TypeModifier" Value="Internal" />
             <om:Property Name="ReportToAnalyst" Value="True" />
-            <om:Property Name="Name" Value="Process_TranspakInvoice_To_DB_TPPW" />
+            <om:Property Name="Name" Value="Process_TranspakInvoice_To_DB_TPMY" />
             <om:Property Name="Signal" Value="True" />
             <om:Element Type="VariableDeclaration" OID="11843195-0c2c-404a-8a6b-2acc8170b009" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="23.1" HigherBound="24.1">
                 <om:Property Name="UseDefaultConstructor" Value="False" />
@@ -401,7 +401,7 @@ module Sp.Transpak.Orchestrations
         };
     };
     [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
-    internal service Process_TranspakInvoice_To_DB_TPPW
+    internal service Process_TranspakInvoice_To_DB_TPMY
     {
         [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
         port implements PortType_Port_RcvTranspakInvoiceXMLTPPW Port_RcvTranspakInvoiceXMLTPPW;

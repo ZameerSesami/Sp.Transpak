@@ -63,7 +63,9 @@
   <ItemGroup>
     <Compile Include="ItemsFailureModel.cs" />
     <Compile Include="LHDNInvoiceAPI.cs" />
+    <Compile Include="LHDNInvoiceDetails.cs" />
     <Compile Include="LHDNInvoiceRequestModel.cs" />
+    <Compile Include="LHDNInvoiceResponse.cs" />
     <Compile Include="LHDNTokenResponse.cs" />
     <Compile Include="PostPeppolXMLData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

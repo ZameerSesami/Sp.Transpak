@@ -8,9 +8,9 @@ namespace Sp.Transpak.CallAPI
 {
     public class LHDNInvoiceRequestModel
     {
-        public List<Document> documents { get; set; }
+        public List<DocumentModel> documents { get; set; } = new List<DocumentModel>();
     }
-    public class Document
+    public class DocumentModel
     {
         public string format { get; set; }
         public string documentHash { get; set; }

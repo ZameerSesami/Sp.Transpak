@@ -30,7 +30,7 @@
             <om:Property Name="IsInvokable" Value="False" />
             <om:Property Name="TypeModifier" Value="Internal" />
             <om:Property Name="ReportToAnalyst" Value="True" />
-            <om:Property Name="Name" Value="Process_LHDNAPI_TPPW" />
+            <om:Property Name="Name" Value="Process_LHDNAPI_TPMY" />
             <om:Property Name="Signal" Value="True" />
             <om:Element Type="VariableDeclaration" OID="7ca9cdd9-7cd2-499d-9a75-31703ccf4025" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="23.1" HigherBound="24.1">
                 <om:Property Name="UseDefaultConstructor" Value="False" />
@@ -373,7 +373,7 @@ module Sp.Transpak.Orchestrations
         };
     };
     [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
-    internal service Process_LHDNAPI_TPPW
+    internal service Process_LHDNAPI_TPMY
     {
         [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
         port implements PortType_RcvTranspakInvoicesTPPW Port_RcvTranspakInvoicesTPPW;
