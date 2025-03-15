@@ -194,8 +194,8 @@
                 <om:Property Name="Type" Value="Sp.Transpak.Schemas.uspInvoiceStatusupd_TypedProcedure_dbo.InterfaceTranspakInvStatusUpdResponse" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="Message_1" />
-                <om:Property Name="Signal" Value="False" />
+                <om:Property Name="Name" Value="msgInvAPIStatusUpdResp" />
+                <om:Property Name="Signal" Value="True" />
             </om:Element>
             <om:Element Type="ServiceBody" OID="850d2843-950f-4642-a89e-eb4bc6372e86" ParentLink="ServiceDeclaration_ServiceBody">
                 <om:Property Name="Signal" Value="False" />
@@ -271,10 +271,10 @@
                             </om:Element>
                         </om:Element>
                         <om:Element Type="VariableAssignment" OID="ee7a4f19-0337-4d38-8c8c-a30a1a73dc08" ParentLink="ComplexStatement_Statement" LowerBound="108.1" HigherBound="122.1">
-                            <om:Property Name="Expression" Value="varTempXML = msgLHDNInvoice;&#xD;&#xA;varAPIResp = varobjPeppolAPI.PostResponseData(varTempXML.OuterXml,&quot;&quot;,&quot;Invoice&quot;);&#xD;&#xA;if(System.Convert.ToString(Sp.Transpak.Common.SSOClientHelper.Read(&quot;Sp.Transpak&quot;, &quot;ShowTranspakAdminLogs&quot;)) == &quot;Yes&quot;)&#xA;{&#xA;    if(varAPIResp.Length &lt; 30000)&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;APIResp&quot;,varAPIResp);&#xA;    }&#xA;    else&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;APIResp&quot;,varAPIResp.Substring(1,29500));&#xA;    }&#xA;}" />
+                            <om:Property Name="Expression" Value="varTempXML = msgLHDNInvoice;&#xD;&#xA;varAPIResp = varobjPeppolAPI.PostResponseData(varTempXML.OuterXml,&quot;TSP&quot;,&quot;Invoice&quot;);&#xD;&#xA;if(System.Convert.ToString(Sp.Transpak.Common.SSOClientHelper.Read(&quot;Sp.Transpak&quot;, &quot;ShowTranspakAdminLogs&quot;)) == &quot;Yes&quot;)&#xA;{&#xA;    if(varAPIResp.Length &lt; 30000)&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;APIResp&quot;,varAPIResp);&#xA;    }&#xA;    else&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;APIResp&quot;,varAPIResp.Substring(1,29500));&#xA;    }&#xA;}" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
                             <om:Property Name="Name" Value="Call_API_Peppol" />
-                            <om:Property Name="Signal" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
                         </om:Element>
                         <om:Element Type="Construct" OID="08da8cbc-1a21-493c-b4f8-4858021c87fd" ParentLink="ComplexStatement_Statement" LowerBound="122.1" HigherBound="132.1">
                             <om:Property Name="ReportToAnalyst" Value="True" />
@@ -332,7 +332,7 @@
                         <om:Element Type="Receive" OID="38cc58ca-5af5-4afc-a7a0-e3f8668b3eea" ParentLink="ComplexStatement_Statement" LowerBound="203.1" HigherBound="205.1">
                             <om:Property Name="Activate" Value="False" />
                             <om:Property Name="PortName" Value="Port_SndRcvTranspakInvStatusUpdTSP" />
-                            <om:Property Name="MessageName" Value="Message_1" />
+                            <om:Property Name="MessageName" Value="msgInvAPIStatusUpdResp" />
                             <om:Property Name="OperationName" Value="Operation_1" />
                             <om:Property Name="OperationMessageName" Value="Response" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
@@ -433,7 +433,7 @@ module Sp.Transpak.Orchestrations
         message Sp.Transpak.Schemas.uspPollInvoicesTSP_TypedPolling_InterfaceTranspakPollInvoicesTSP.TypedPollingResultSet0 msgSingleInvoice;
         message Sp.Transpak.Schemas.TranspakInvoice.Invoice msgLHDNInvoice;
         message Sp.Transpak.Schemas.uspInvoiceStatusupd_TypedProcedure_dbo.InterfaceTranspakInvStatusUpd msgInvAPIStatusUpdReq;
-        message Sp.Transpak.Schemas.uspInvoiceStatusupd_TypedProcedure_dbo.InterfaceTranspakInvStatusUpdResponse Message_1;
+        message Sp.Transpak.Schemas.uspInvoiceStatusupd_TypedProcedure_dbo.InterfaceTranspakInvStatusUpdResponse msgInvAPIStatusUpdResp;
         System.String varAPIStatus;
         System.String varAPIDate;
         System.String varAPIErrorMessage;
@@ -513,7 +513,7 @@ module Sp.Transpak.Orchestrations
                         }
                         [Microsoft.XLANGs.BaseTypes.DesignerPosition("ee7a4f19-0337-4d38-8c8c-a30a1a73dc08")]
                         varTempXML = msgLHDNInvoice;
-                        varAPIResp = varobjPeppolAPI.PostResponseData(varTempXML.OuterXml,"","Invoice");
+                        varAPIResp = varobjPeppolAPI.PostResponseData(varTempXML.OuterXml,"TSP","Invoice");
                         if(System.Convert.ToString(Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "ShowTranspakAdminLogs")) == "Yes")
                         {
                             if(varAPIResp.Length < 30000)
@@ -607,7 +607,7 @@ module Sp.Transpak.Orchestrations
                         [Microsoft.XLANGs.BaseTypes.DesignerPosition("7108bfe8-eadf-4a4f-b051-098aec9d55f5")]
                         send (Port_SndRcvTranspakInvStatusUpdTSP.Operation_1, msgInvAPIStatusUpdReq);
                         [Microsoft.XLANGs.BaseTypes.DesignerPosition("38cc58ca-5af5-4afc-a7a0-e3f8668b3eea")]
-                        receive (Port_SndRcvTranspakInvStatusUpdTSP.Operation_1, Message_1);
+                        receive (Port_SndRcvTranspakInvStatusUpdTSP.Operation_1, msgInvAPIStatusUpdResp);
                     }
                     exceptions
                     {

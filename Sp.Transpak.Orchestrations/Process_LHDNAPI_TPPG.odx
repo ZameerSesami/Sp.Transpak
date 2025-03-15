@@ -6,43 +6,43 @@
         <om:Property Name="ReportToAnalyst" Value="True" />
         <om:Property Name="Name" Value="Sp.Transpak.Orchestrations" />
         <om:Property Name="Signal" Value="False" />
-        <om:Element Type="PortType" OID="2039e831-4e91-4e6a-9acb-d3d83e18f427" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+        <om:Element Type="PortType" OID="0c9cfd7e-d11a-402b-bb8a-d6afc6f1d730" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
             <om:Property Name="Synchronous" Value="False" />
             <om:Property Name="TypeModifier" Value="Internal" />
             <om:Property Name="ReportToAnalyst" Value="True" />
-            <om:Property Name="Name" Value="PortType_RcvTranspakInvoicesTPMY" />
+            <om:Property Name="Name" Value="PortType_RcvTranspakInvoicesTPPG" />
             <om:Property Name="Signal" Value="True" />
-            <om:Element Type="OperationDeclaration" OID="33b541ce-4ffd-474a-a59d-54b4a16f7a31" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+            <om:Element Type="OperationDeclaration" OID="8e446d4d-2da3-4426-953e-0e48cbb3b60b" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
                 <om:Property Name="OperationType" Value="OneWay" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="Operation_1" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="MessageRef" OID="60244fae-c1c6-4b4a-ac95-fb871b1d8862" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.115">
-                    <om:Property Name="Ref" Value="Sp.Transpak.Schemas.uspPollTranspakInvTPMY_TypedPolling_InterfaceTranspakPollInvoicesTPMY.TypedPolling" />
+                <om:Element Type="MessageRef" OID="3183cb55-0735-4d01-984b-b12890db238c" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.115">
+                    <om:Property Name="Ref" Value="Sp.Transpak.Schemas.uspPollTranspakInvTPPG_TypedPolling_InterfaceTranspakPollInvoicesTPPG.TypedPolling" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Request" />
                     <om:Property Name="Signal" Value="True" />
                 </om:Element>
             </om:Element>
         </om:Element>
-        <om:Element Type="PortType" OID="4b3bda26-763c-4473-93e2-8b054425156c" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+        <om:Element Type="PortType" OID="e3b64e5e-e324-4fa9-a99e-ed85fbb52ba8" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
             <om:Property Name="Synchronous" Value="True" />
             <om:Property Name="TypeModifier" Value="Internal" />
             <om:Property Name="ReportToAnalyst" Value="True" />
-            <om:Property Name="Name" Value="PortType_SndRcvTranspakInvStatusUpdTPMY" />
+            <om:Property Name="Name" Value="PortType_SndRcvTranspakInvStatusUpdTPPG" />
             <om:Property Name="Signal" Value="False" />
-            <om:Element Type="OperationDeclaration" OID="8b84743c-1979-490a-a36d-b5cea44682b8" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+            <om:Element Type="OperationDeclaration" OID="3fb5d359-32c1-4a80-8278-b4c11b13b32f" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
                 <om:Property Name="OperationType" Value="RequestResponse" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="Operation_1" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="MessageRef" OID="146c3dbd-e209-4dbe-8ba2-ef249e889b51" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.101">
+                <om:Element Type="MessageRef" OID="1173f003-add6-42ba-a5b0-c5fa47e4bab0" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.101">
                     <om:Property Name="Ref" Value="Sp.Transpak.Schemas.uspInvoiceStatusupd_TypedProcedure_dbo.InterfaceTranspakInvStatusUpd" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Request" />
                     <om:Property Name="Signal" Value="True" />
                 </om:Element>
-                <om:Element Type="MessageRef" OID="5da6e498-065f-4cc2-a9ba-76c286f3c27a" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="15.103" HigherBound="15.199">
+                <om:Element Type="MessageRef" OID="684334ab-3d79-4ab3-8cb9-a9690651e94a" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="15.103" HigherBound="15.199">
                     <om:Property Name="Ref" Value="Sp.Transpak.Schemas.uspInvoiceStatusupd_TypedProcedure_dbo.InterfaceTranspakInvStatusUpdResponse" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Response" />
@@ -55,7 +55,7 @@
             <om:Property Name="IsInvokable" Value="False" />
             <om:Property Name="TypeModifier" Value="Internal" />
             <om:Property Name="ReportToAnalyst" Value="True" />
-            <om:Property Name="Name" Value="Process_LHDNAPI_TPMY" />
+            <om:Property Name="Name" Value="Process_LHDNAPI_TPPG" />
             <om:Property Name="Signal" Value="True" />
             <om:Element Type="VariableDeclaration" OID="7ca9cdd9-7cd2-499d-9a75-31703ccf4025" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="31.1" HigherBound="32.1">
                 <om:Property Name="UseDefaultConstructor" Value="False" />
@@ -163,14 +163,14 @@
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
             <om:Element Type="MessageDeclaration" OID="333e52a5-3887-47d0-bb7d-87b2c5487225" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
-                <om:Property Name="Type" Value="Sp.Transpak.Schemas.uspPollTranspakInvTPMY_TypedPolling_InterfaceTranspakPollInvoicesTPMY.TypedPolling" />
+                <om:Property Name="Type" Value="Sp.Transpak.Schemas.uspPollTranspakInvTPPG_TypedPolling_InterfaceTranspakPollInvoicesTPPG.TypedPolling" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="msgPollInvoices" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
             <om:Element Type="MessageDeclaration" OID="234c6cbb-a8e6-4129-bac6-b6d3ecc065e8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="27.1" HigherBound="28.1">
-                <om:Property Name="Type" Value="Sp.Transpak.Schemas.uspPollTranspakInvTPMY_TypedPolling_InterfaceTranspakPollInvoicesTPMY.TypedPollingResultSet0" />
+                <om:Property Name="Type" Value="Sp.Transpak.Schemas.uspPollTranspakInvTPPG_TypedPolling_InterfaceTranspakPollInvoicesTPPG.TypedPollingResultSet0" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
                 <om:Property Name="Name" Value="msgSingleInvoice" />
@@ -190,7 +190,7 @@
                 <om:Property Name="Name" Value="msgInvAPIStatusUpdReq" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="7c2d6d64-b663-44d6-8071-0914a90855ae" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="30.1" HigherBound="31.1">
+            <om:Element Type="MessageDeclaration" OID="dc079704-e8ca-4ce3-bb95-540bbbbfc1e6" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="30.1" HigherBound="31.1">
                 <om:Property Name="Type" Value="Sp.Transpak.Schemas.uspInvoiceStatusupd_TypedProcedure_dbo.InterfaceTranspakInvStatusUpdResponse" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
@@ -201,7 +201,7 @@
                 <om:Property Name="Signal" Value="False" />
                 <om:Element Type="Receive" OID="5ba5820a-0ef4-485d-b159-ffbeb5643449" ParentLink="ServiceBody_Statement" LowerBound="45.1" HigherBound="59.1">
                     <om:Property Name="Activate" Value="True" />
-                    <om:Property Name="PortName" Value="Port_RcvTranspakInvoicesTPMY" />
+                    <om:Property Name="PortName" Value="Port_RcvTranspakInvoicesTPPG" />
                     <om:Property Name="MessageName" Value="msgPollInvoices" />
                     <om:Property Name="OperationName" Value="Operation_1" />
                     <om:Property Name="OperationMessageName" Value="Request" />
@@ -210,7 +210,7 @@
                     <om:Property Name="Signal" Value="True" />
                 </om:Element>
                 <om:Element Type="VariableAssignment" OID="56fb5e77-a095-4349-9a21-416ed5a8187d" ParentLink="ServiceBody_Statement" LowerBound="59.1" HigherBound="63.1">
-                    <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;Transpak LHDNAPI_TPMY Process Start&quot;,&quot;Transpak LHDNAPI_TPMY Process Started&quot;);&#xD;&#xA;varDocCount = xpath(msgPollInvoices,&quot;count(/*[local-name()='TypedPolling' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY']/*[local-name()='DocumentID' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY'])&quot;);&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;Transpak TPPW Doc Count&quot;,varDocCount.ToString());&#xD;&#xA;" />
+                    <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;Transpak LHDNAPI_TPGG Process Start&quot;,&quot;Transpak LHDNAPI_TPGG Process Started&quot;);&#xD;&#xA;varDocCount = xpath(msgPollInvoices,&quot;count(/*[local-name()='TypedPolling' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG']/*[local-name()='DocumentID' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG'])&quot;);&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;Transpak Doc Count&quot;,varDocCount.ToString());&#xD;&#xA;" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Process_Start" />
                     <om:Property Name="Signal" Value="True" />
@@ -242,10 +242,10 @@
                                 <om:Property Name="Signal" Value="False" />
                             </om:Element>
                             <om:Element Type="MessageAssignment" OID="dd305855-e2f7-4c59-bb74-3fa96feaf57f" ParentLink="ComplexStatement_Statement" LowerBound="77.1" HigherBound="82.1">
-                                <om:Property Name="Expression" Value="msgSingleInvoice = xpath(msgPollInvoices, &quot;/*[local-name()='TypedPolling' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY'][&quot;+ varLoopItem +&quot;]&quot; );&#xD;&#xA;varDocId = msgSingleInvoice.DocumentID;&#xD;&#xA;varFullXMLPath = msgSingleInvoice.PeppolXMLPath;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="Expression" Value="msgSingleInvoice = xpath(msgPollInvoices, &quot;/*[local-name()='TypedPolling' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG'][&quot;+ varLoopItem +&quot;]&quot; );&#xD;&#xA;varDocId = msgSingleInvoice.DocumentID;&#xD;&#xA;varFullXMLPath = msgSingleInvoice.PeppolXMLPath;&#xD;&#xA;&#xD;&#xA;" />
                                 <om:Property Name="ReportToAnalyst" Value="False" />
                                 <om:Property Name="Name" Value="MsgAssign_InvoiceHeaderRequest" />
-                                <om:Property Name="Signal" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
                             </om:Element>
                         </om:Element>
                         <om:Element Type="VariableAssignment" OID="14bea831-fec3-4287-bff0-f4b026fb9f64" ParentLink="ComplexStatement_Statement" LowerBound="83.1" HigherBound="98.1">
@@ -271,7 +271,7 @@
                             </om:Element>
                         </om:Element>
                         <om:Element Type="VariableAssignment" OID="ee7a4f19-0337-4d38-8c8c-a30a1a73dc08" ParentLink="ComplexStatement_Statement" LowerBound="108.1" HigherBound="125.1">
-                            <om:Property Name="Expression" Value="varTempXML = msgLHDNInvoice;&#xD;&#xA;varAPIResp = varobjPeppolAPI.PostResponseData(varTempXML.OuterXml,&quot;TPMY&quot;,&quot;Invoice&quot;);&#xD;&#xA;&#xD;&#xA;//varAPIResp = varobjLHDNAPI.SubmitLHDNInvoice(&quot;SESAMiTEST&quot;,varTempXML.OuterXml);&#xD;&#xA;&#xA;if(System.Convert.ToString(Sp.Transpak.Common.SSOClientHelper.Read(&quot;Sp.Transpak&quot;, &quot;ShowTranspakAdminLogs&quot;)) == &quot;Yes&quot;)&#xA;{&#xA;    if(varAPIResp.Length &lt; 30000)&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;APIResp&quot;,varAPIResp);&#xA;    }&#xA;    else&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;APIResp&quot;,varAPIResp.Substring(1,29500));&#xA;    }&#xA;}" />
+                            <om:Property Name="Expression" Value="varTempXML = msgLHDNInvoice;&#xD;&#xA;varAPIResp = varobjPeppolAPI.PostResponseData(varTempXML.OuterXml,&quot;TPPG&quot;,&quot;Invoice&quot;);&#xD;&#xA;&#xD;&#xA;//varAPIResp = varobjLHDNAPI.SubmitLHDNInvoice(&quot;SESAMiTEST&quot;,varTempXML.OuterXml);&#xD;&#xA;&#xA;if(System.Convert.ToString(Sp.Transpak.Common.SSOClientHelper.Read(&quot;Sp.Transpak&quot;, &quot;ShowTranspakAdminLogs&quot;)) == &quot;Yes&quot;)&#xA;{&#xA;    if(varAPIResp.Length &lt; 30000)&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;APIResp&quot;,varAPIResp);&#xA;    }&#xA;    else&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;APIResp&quot;,varAPIResp.Substring(1,29500));&#xA;    }&#xA;}" />
                             <om:Property Name="ReportToAnalyst" Value="True" />
                             <om:Property Name="Name" Value="Call_API_Peppol" />
                             <om:Property Name="Signal" Value="True" />
@@ -321,7 +321,7 @@
                             <om:Property Name="Signal" Value="False" />
                         </om:Element>
                         <om:Element Type="Send" OID="7108bfe8-eadf-4a4f-b051-098aec9d55f5" ParentLink="ComplexStatement_Statement" LowerBound="204.1" HigherBound="206.1">
-                            <om:Property Name="PortName" Value="Port_SndRcvTranspakInvStatusUpdTPMY" />
+                            <om:Property Name="PortName" Value="Port_SndRcvTranspakInvStatusUpdTPPG" />
                             <om:Property Name="MessageName" Value="msgInvAPIStatusUpdReq" />
                             <om:Property Name="OperationName" Value="Operation_1" />
                             <om:Property Name="OperationMessageName" Value="Request" />
@@ -329,9 +329,9 @@
                             <om:Property Name="Name" Value="Send_1" />
                             <om:Property Name="Signal" Value="True" />
                         </om:Element>
-                        <om:Element Type="Receive" OID="f64d9252-3a4b-47e4-836b-bff8bfada4b7" ParentLink="ComplexStatement_Statement" LowerBound="206.1" HigherBound="208.1">
+                        <om:Element Type="Receive" OID="9bf88782-0973-421e-8e28-a5044bd22519" ParentLink="ComplexStatement_Statement" LowerBound="206.1" HigherBound="208.1">
                             <om:Property Name="Activate" Value="False" />
-                            <om:Property Name="PortName" Value="Port_SndRcvTranspakInvStatusUpdTPMY" />
+                            <om:Property Name="PortName" Value="Port_SndRcvTranspakInvStatusUpdTPPG" />
                             <om:Property Name="MessageName" Value="Message_1" />
                             <om:Property Name="OperationName" Value="Operation_1" />
                             <om:Property Name="OperationMessageName" Value="Response" />
@@ -362,41 +362,41 @@
                     </om:Element>
                 </om:Element>
                 <om:Element Type="VariableAssignment" OID="5fd152b0-4f1d-4bda-85e0-6d426b01ec62" ParentLink="ServiceBody_Statement" LowerBound="222.1" HigherBound="224.1">
-                    <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;Transpak LHDNAPI_TPMY Process End&quot;,&quot;Transpak LHDNAPI_TPMY Process Completed&quot;);" />
+                    <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;Transpak LHDNAPI_TPGG Process End&quot;,&quot;Transpak LHDNAPI_TPGG Process Completed&quot;);" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Process_End" />
-                    <om:Property Name="Signal" Value="True" />
+                    <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="PortDeclaration" OID="793d89bd-6b20-4166-a8fb-f714bf0bde0d" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+            <om:Element Type="PortDeclaration" OID="67f63f2d-1051-46a9-a736-83c06998de34" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
                 <om:Property Name="PortModifier" Value="Implements" />
                 <om:Property Name="Orientation" Value="Left" />
                 <om:Property Name="PortIndex" Value="-1" />
                 <om:Property Name="IsWebPort" Value="False" />
                 <om:Property Name="OrderedDelivery" Value="False" />
                 <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="Sp.Transpak.Orchestrations.PortType_RcvTranspakInvoicesTPMY" />
+                <om:Property Name="Type" Value="Sp.Transpak.Orchestrations.PortType_RcvTranspakInvoicesTPPG" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="Port_RcvTranspakInvoicesTPMY" />
+                <om:Property Name="Name" Value="Port_RcvTranspakInvoicesTPPG" />
                 <om:Property Name="Signal" Value="True" />
-                <om:Element Type="LogicalBindingAttribute" OID="868e6033-fc99-4260-a742-2ec6b31c3152" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                <om:Element Type="LogicalBindingAttribute" OID="dfab4d3b-f053-4cd0-8cd8-b8a0737738fc" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="PortDeclaration" OID="d5875f0f-417e-4640-b666-9e154ee6bc65" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+            <om:Element Type="PortDeclaration" OID="e3fb957e-e676-44ca-a5ae-b8bcae0748ec" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
                 <om:Property Name="PortModifier" Value="Uses" />
                 <om:Property Name="Orientation" Value="Right" />
-                <om:Property Name="PortIndex" Value="68" />
+                <om:Property Name="PortIndex" Value="65" />
                 <om:Property Name="IsWebPort" Value="False" />
                 <om:Property Name="OrderedDelivery" Value="False" />
                 <om:Property Name="DeliveryNotification" Value="None" />
-                <om:Property Name="Type" Value="Sp.Transpak.Orchestrations.PortType_SndRcvTranspakInvStatusUpdTPMY" />
+                <om:Property Name="Type" Value="Sp.Transpak.Orchestrations.PortType_SndRcvTranspakInvStatusUpdTPPG" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="Port_SndRcvTranspakInvStatusUpdTPMY" />
+                <om:Property Name="Name" Value="Port_SndRcvTranspakInvStatusUpdTPPG" />
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="LogicalBindingAttribute" OID="be8dcfcc-8dfb-45e4-81fa-ec066ff138b3" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                <om:Element Type="LogicalBindingAttribute" OID="be60d9d2-42a3-4523-a6fd-da790b401c41" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
                     <om:Property Name="Signal" Value="False" />
                 </om:Element>
             </om:Element>
@@ -407,14 +407,14 @@
 [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
 module Sp.Transpak.Orchestrations
 {
-    internal porttype PortType_RcvTranspakInvoicesTPMY
+    internal porttype PortType_RcvTranspakInvoicesTPPG
     {
         oneway Operation_1
         {
-            Sp.Transpak.Schemas.uspPollTranspakInvTPMY_TypedPolling_InterfaceTranspakPollInvoicesTPMY.TypedPolling
+            Sp.Transpak.Schemas.uspPollTranspakInvTPPG_TypedPolling_InterfaceTranspakPollInvoicesTPPG.TypedPolling
         };
     };
-    internal porttype PortType_SndRcvTranspakInvStatusUpdTPMY
+    internal porttype PortType_SndRcvTranspakInvStatusUpdTPPG
     {
         requestresponse Operation_1
         {
@@ -422,15 +422,15 @@ module Sp.Transpak.Orchestrations
         };
     };
     [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
-    internal service Process_LHDNAPI_TPMY
+    internal service Process_LHDNAPI_TPPG
     {
         [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
-        port implements PortType_RcvTranspakInvoicesTPMY Port_RcvTranspakInvoicesTPMY;
+        port implements PortType_RcvTranspakInvoicesTPPG Port_RcvTranspakInvoicesTPPG;
         [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
-        port uses PortType_SndRcvTranspakInvStatusUpdTPMY Port_SndRcvTranspakInvStatusUpdTPMY;
+        port uses PortType_SndRcvTranspakInvStatusUpdTPPG Port_SndRcvTranspakInvStatusUpdTPPG;
         message Sp.Transpak.Schemas.PeppolAPIResponse msgPeppolAPIResp;
-        message Sp.Transpak.Schemas.uspPollTranspakInvTPMY_TypedPolling_InterfaceTranspakPollInvoicesTPMY.TypedPolling msgPollInvoices;
-        message Sp.Transpak.Schemas.uspPollTranspakInvTPMY_TypedPolling_InterfaceTranspakPollInvoicesTPMY.TypedPollingResultSet0 msgSingleInvoice;
+        message Sp.Transpak.Schemas.uspPollTranspakInvTPPG_TypedPolling_InterfaceTranspakPollInvoicesTPPG.TypedPolling msgPollInvoices;
+        message Sp.Transpak.Schemas.uspPollTranspakInvTPPG_TypedPolling_InterfaceTranspakPollInvoicesTPPG.TypedPollingResultSet0 msgSingleInvoice;
         message Sp.Transpak.Schemas.TranspakInvoice.Invoice msgLHDNInvoice;
         message Sp.Transpak.Schemas.uspInvoiceStatusupd_TypedProcedure_dbo.InterfaceTranspakInvStatusUpd msgInvAPIStatusUpdReq;
         message Sp.Transpak.Schemas.uspInvoiceStatusupd_TypedProcedure_dbo.InterfaceTranspakInvStatusUpdResponse Message_1;
@@ -449,7 +449,7 @@ module Sp.Transpak.Orchestrations
         body ()
         {
             [Microsoft.XLANGs.BaseTypes.DesignerPosition("5ba5820a-0ef4-485d-b159-ffbeb5643449")]
-            activate receive (Port_RcvTranspakInvoicesTPMY.Operation_1, msgPollInvoices);
+            activate receive (Port_RcvTranspakInvoicesTPPG.Operation_1, msgPollInvoices);
             varAPIStatus = "";
             varAPIDate = "";
             varAPIErrorMessage = "";
@@ -463,9 +463,9 @@ module Sp.Transpak.Orchestrations
             varDocId = "";
             varDocCount = 0;
             [Microsoft.XLANGs.BaseTypes.DesignerPosition("56fb5e77-a095-4349-9a21-416ed5a8187d")]
-            System.Diagnostics.EventLog.WriteEntry("Transpak LHDNAPI_TPMY Process Start","Transpak LHDNAPI_TPMY Process Started");
-            varDocCount = xpath(msgPollInvoices,"count(/*[local-name()='TypedPolling' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY']/*[local-name()='DocumentID' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY'])");
-            System.Diagnostics.EventLog.WriteEntry("Transpak TPPW Doc Count",varDocCount.ToString());
+            System.Diagnostics.EventLog.WriteEntry("Transpak LHDNAPI_TPGG Process Start","Transpak LHDNAPI_TPGG Process Started");
+            varDocCount = xpath(msgPollInvoices,"count(/*[local-name()='TypedPolling' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG']/*[local-name()='DocumentID' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG'])");
+            System.Diagnostics.EventLog.WriteEntry("Transpak Doc Count",varDocCount.ToString());
             [Microsoft.XLANGs.BaseTypes.DesignerPosition("a51e8afb-0d3e-4e5b-835f-8b2f5b6e6576")]
             while (varLoopCounter < varDocCount)
             {
@@ -481,7 +481,7 @@ module Sp.Transpak.Orchestrations
                         construct msgSingleInvoice
                         {
                             [Microsoft.XLANGs.BaseTypes.DesignerPosition("dd305855-e2f7-4c59-bb74-3fa96feaf57f")]
-                            msgSingleInvoice = xpath(msgPollInvoices, "/*[local-name()='TypedPolling' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPMY']["+ varLoopItem +"]" );
+                            msgSingleInvoice = xpath(msgPollInvoices, "/*[local-name()='TypedPolling' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfaceTranspakPollInvoicesTPPG']["+ varLoopItem +"]" );
                             varDocId = msgSingleInvoice.DocumentID;
                             varFullXMLPath = msgSingleInvoice.PeppolXMLPath;
                             
@@ -513,7 +513,7 @@ module Sp.Transpak.Orchestrations
                         }
                         [Microsoft.XLANGs.BaseTypes.DesignerPosition("ee7a4f19-0337-4d38-8c8c-a30a1a73dc08")]
                         varTempXML = msgLHDNInvoice;
-                        varAPIResp = varobjPeppolAPI.PostResponseData(varTempXML.OuterXml,"TPMY","Invoice");
+                        varAPIResp = varobjPeppolAPI.PostResponseData(varTempXML.OuterXml,"TPPG","Invoice");
                         
                         //varAPIResp = varobjLHDNAPI.SubmitLHDNInvoice("SESAMiTEST",varTempXML.OuterXml);
                         
@@ -608,9 +608,9 @@ module Sp.Transpak.Orchestrations
                             }
                         }
                         [Microsoft.XLANGs.BaseTypes.DesignerPosition("7108bfe8-eadf-4a4f-b051-098aec9d55f5")]
-                        send (Port_SndRcvTranspakInvStatusUpdTPMY.Operation_1, msgInvAPIStatusUpdReq);
-                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f64d9252-3a4b-47e4-836b-bff8bfada4b7")]
-                        receive (Port_SndRcvTranspakInvStatusUpdTPMY.Operation_1, Message_1);
+                        send (Port_SndRcvTranspakInvStatusUpdTPPG.Operation_1, msgInvAPIStatusUpdReq);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("9bf88782-0973-421e-8e28-a5044bd22519")]
+                        receive (Port_SndRcvTranspakInvStatusUpdTPPG.Operation_1, Message_1);
                     }
                     exceptions
                     {
@@ -626,7 +626,7 @@ module Sp.Transpak.Orchestrations
                 delay new System.TimeSpan(0,0,0,0,System.Convert.ToInt32(Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "TranspakDelayinMS")));
             }
             [Microsoft.XLANGs.BaseTypes.DesignerPosition("5fd152b0-4f1d-4bda-85e0-6d426b01ec62")]
-            System.Diagnostics.EventLog.WriteEntry("Transpak LHDNAPI_TPMY Process End","Transpak LHDNAPI_TPMY Process Completed");
+            System.Diagnostics.EventLog.WriteEntry("Transpak LHDNAPI_TPGG Process End","Transpak LHDNAPI_TPGG Process Completed");
         }
     }
 }

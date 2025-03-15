@@ -76,7 +76,7 @@
     <None Include="sptranspakkey.snk" />
   </ItemGroup>
   <ItemGroup>
-    <XLang Include="Process_TranspakInvoice_To_DB_TPGG.odx">
+    <XLang Include="Process_TranspakInvoice_To_DB_TPPG.odx">
       <TypeName>Process_TranspakInvoice_To_DB_TPGG</TypeName>
       <Namespace>Sp.Transpak.Orchestrations</Namespace>
       <SubType>Task</SubType>
@@ -97,7 +97,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <XLang Include="Process_LHDNAPI_TPGG.odx">
+    <XLang Include="Process_LHDNAPI_TPPG.odx">
       <TypeName>Process_LHDNAPI_TPGG</TypeName>
       <Namespace>Sp.Transpak.Orchestrations</Namespace>
       <SubType>Task</SubType>
@@ -146,8 +146,29 @@
     </XLang>
   </ItemGroup>
   <ItemGroup>
-    <XLang Include="Process_TranspakInvResponse_TPGG.odx">
+    <XLang Include="Process_TranspakInvResponse_TPPG.odx">
       <TypeName>Process_TranspakInvResponse_TPGG</TypeName>
+      <Namespace>Sp.Transpak.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_TranspakInvoice_To_DB_TPS.odx">
+      <TypeName>Process_TranspakInvoice_To_DB_TPS</TypeName>
+      <Namespace>Sp.Transpak.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_LHDNAPI_TPS.odx">
+      <TypeName>Process_LHDNAPI_TPS</TypeName>
+      <Namespace>Sp.Transpak.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_TranspakInvResponse_TPS.odx">
+      <TypeName>Process_TranspakInvResponse_TPS</TypeName>
       <Namespace>Sp.Transpak.Orchestrations</Namespace>
       <SubType>Task</SubType>
     </XLang>

@@ -73,6 +73,26 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="uspLHDNSentTPS_TypedPolling.InterfaceLHDNSentTranspakInvoicesTPS.xsd">
+      <TypeName>uspLHDNSentTPS_TypedPolling_InterfaceLHDNSentTranspakInvoicesTPS</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPollInvoicesTPS_TypedPolling.InterfaceTranspakPollInvoicesTPS.xsd">
+      <TypeName>uspPollInvoicesTPS_TypedPolling_InterfaceTranspakPollInvoicesTPS</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPollTranspakInvTPMY_TypedPolling.InterfaceTranspakPollInvoicesTPMY.xsd">
+      <TypeName>uspPollTranspakInvTPMY_TypedPolling_InterfaceTranspakPollInvoicesTPMY</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPollTranspakInvTPPG_TypedPolling.InterfaceTranspakPollInvoicesTPPG.xsd">
+      <TypeName>uspPollTranspakInvTPPG_TypedPolling_InterfaceTranspakPollInvoicesTPPG</TypeName>
+      <Namespace>Sp.Transpak.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="uspErrorLogsTranspak_TypedProcedure.dbo.xsd">
       <TypeName>uspErrorLogsTranspak_TypedProcedure_dbo</TypeName>
       <Namespace>Sp.Transpak.Schemas</Namespace>
@@ -93,12 +113,12 @@
       <Namespace>Sp.Transpak.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="uspLHDNSentTPGG_TypedPolling.InterfaceLHDNSentTranspakInvoices_TPGG.xsd">
+    <Schema Include="uspLHDNSentTPPG_TypedPolling.InterfaceLHDNSentTranspakInvoices_TPPG.xsd">
       <TypeName>uspLHDNSentTPGG_TypedPolling_InterfaceLHDNSentTranspakInvoices_TPGG</TypeName>
       <Namespace>Sp.Transpak.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="uspLHDNSentTPPW_TypedPolling.InterfaceLHDNSentTranspakInvoices_TPPW.xsd">
+    <Schema Include="uspLHDNSentTPMY_TypedPolling.InterfaceLHDNSentTranspakInvoices_TPMY.xsd">
       <TypeName>uspLHDNSentTPPW_TypedPolling_InterfaceLHDNSentTranspakInvoices_TPPW</TypeName>
       <Namespace>Sp.Transpak.Schemas</Namespace>
       <SubType>Task</SubType>
@@ -113,11 +133,6 @@
       <Namespace>Sp.Transpak.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="uspPollInvoicesTPPW_TypedPolling.InterfaceTranspakPollInvoicesTPPW.xsd">
-      <TypeName>uspPollInvoicesTPPW_TypedPolling_InterfaceTranspakPollInvoicesTPPW</TypeName>
-      <Namespace>Sp.Transpak.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
     <Schema Include="uspInvoiceStatusupd_TypedProcedure.dbo.xsd">
       <TypeName>uspInvoiceStatusupd_TypedProcedure_dbo</TypeName>
       <Namespace>Sp.Transpak.Schemas</Namespace>
@@ -129,11 +144,6 @@
       <SubType>Task</SubType>
     </Schema>
     <None Include="sptranspakkey.snk" />
-    <Schema Include="uspPollInvoicesTPGG_TypedPolling.InterfaceTranspakPollInvoicesTPGG.xsd">
-      <TypeName>uspPollInvoicesTPGG_TypedPolling_InterfaceTranspakPollInvoicesTPGG</TypeName>
-      <Namespace>Sp.Transpak.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
     <Schema Include="uspInsertInvoice_ProcedureResultSet.dbo.InterfaceTranspakInvoiceInsert.xsd">
       <TypeName>uspInsertInvoice_ProcedureResultSet_dbo_InterfaceInvoiceInsert</TypeName>
       <Namespace>Sp.Transpak.Schemas</Namespace>
@@ -170,6 +180,10 @@
     <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo1.xml" />
     <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo2.xml" />
     <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo3.xml" />
+    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo4.xml" />
+    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo5.xml" />
+    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo6.xml" />
+    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo7.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo1.xml" />
   </ItemGroup>

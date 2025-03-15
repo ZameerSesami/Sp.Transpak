@@ -36,6 +36,30 @@ namespace Sp.Transpak.CallAPI
         {
             try
             {
+                if (ArchivePathXML == "TSP")
+                {
+                    PEPPOLID_UAT = Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "APIPEPPOLID_TranspakTSP_UAT");
+                    ChannelID_UAT = Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "APIChannelID_TranspakTSP_UAT");
+                    ClientID_UAT = Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "APIClientID_TranspakTSP_UAT");
+                }
+                else if (ArchivePathXML == "TPPG")
+                {
+                    PEPPOLID_UAT = Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "APIPEPPOLID_TranspakTPPG_UAT");
+                    ChannelID_UAT = Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "APIChannelID_TranspakTPPG_UAT");
+                    ClientID_UAT = Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "APIClientID_TranspakTPPG_UAT");
+                }
+                else if (ArchivePathXML == "TPMY")
+                {
+                    PEPPOLID_UAT = Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "APIPEPPOLID_TranspakTPMY_UAT");
+                    ChannelID_UAT = Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "APIChannelID_TranspakTPMY_UAT");
+                    ClientID_UAT = Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "APIClientID_TranspakTPMY_UAT");
+                }
+                else if (ArchivePathXML == "TPS")
+                {
+                    PEPPOLID_UAT = Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "APIPEPPOLID_TranspakTPS_UAT");
+                    ChannelID_UAT = Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "APIChannelID_TranspakTPS_UAT");
+                    ClientID_UAT = Sp.Transpak.Common.SSOClientHelper.Read("Sp.Transpak", "APIClientID_TranspakTPS_UAT");
+                }
                 var apiresp = ProcessResponseData(requestXML, ArchivePathXML, DocType);
                 return apiresp;
             }
